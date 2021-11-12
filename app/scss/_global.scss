@@ -7,3 +7,9 @@ html {
 *::before {
     box-sizing: inherit;
 }
+
+body {
+    @extend %Rubick-400;
+    font-size: 18px;
+    line-height: 30px;
+}
