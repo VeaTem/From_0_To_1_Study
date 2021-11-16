@@ -18,7 +18,9 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+input[class],
+button[class] {
     margin: 0;
 }
 

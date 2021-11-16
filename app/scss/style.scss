@@ -85,4 +85,98 @@
 }
 
 // --------------------------------------------------
+.footer {
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 24px;
+    &__logo {
+        margin-bottom: 25px;
+    }
+    &__inner-top {
+        display: flex;
+        border-bottom: 1px solid #dae4e9;
+        padding: 80px 0;
+        margin-bottom: 35px;
+    }
+    &__box {
+        width: 200px
+    }
+    &__box+.footer__box {
+        margin-left: 100px;
+    }
+    &__title {
+        text-transform: uppercase;
+        @extend %DMSans-700;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+        margin-bottom: 27px;
+    }
+    &__list-item {
+        margin-bottom: 16px;
+    }
+    &__text {
+        margin-bottom: 35px;
+    }
+    &__form-box {
+        width: 270px
+    }
+}
+
+// --------------------------------------------------
+.footer__form {
+    display: flex;
+}
+
+.form {
+    @extend %DMSans-400;
+    line-height: 21px;
+    &__email {
+        padding: 15px;
+        background-color: #fef7f0;
+        font-size: 12px;
+        color: #234969;
+        border: none;
+        max-width: 170px;
+        width: 100%;
+         ::placeholder {
+            color: #234969;
+        }
+    }
+    &__btn {
+        padding: 15px 17px;
+        background-color: #a3bbc8;
+        color: #fff;
+        font-size: 14px;
+        border: none;
+        max-width: 100px;
+    }
+}
+
+// --------------------------------------------------
+.footer {
+    &__inner-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__list-bottom {
+        display: flex;
+        &__item+.footer__list-bottom__item {
+            margin-left: 30px;
+            position: relative;
+        }
+        &__item+.footer__list-bottom__item::before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 1px;
+            left: -15px;
+            top: 4px;
+            background-color: #7b7b7b;
+        }
+    }
+}
+
+// --------------------------------------------------
 @import "media";
