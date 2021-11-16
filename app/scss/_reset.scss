@@ -18,7 +18,9 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+input[class],
+button[class] {
     margin: 0;
 }
 
@@ -38,7 +40,7 @@ select {
     font: inherit;
 }
 
-a[class] {
+a {
     text-decoration: none;
     color: inherit;
 }
