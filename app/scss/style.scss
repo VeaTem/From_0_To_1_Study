@@ -164,6 +164,7 @@
     .line-info {
         background-color: #fef7f0;
         padding: 50px 0;
+        margin-bottom: 75px;
         &__inner {
             display: flex;
             justify-content: space-between;
@@ -195,7 +196,97 @@
     }
     
     // --------------------------------------------------
-    .footer {
+    .products {
+        margin-bottom: 80px;
+        &__filter {
+            text-align: center;
+            @extend %DMSans-700;
+            font-size: 16px;
+            line-height: normal;
+            color: #8b8b8b;
+            margin-bottom: 80px;
+            &-btn {
+                cursor: pointer;
+                background-color: transparent;
+                color: #8b8b8b;
+                border: 0;
+                padding: 0;
+                transition: all 0.5s;
+                &:hover {
+                    color: #000;
+                }
+                &+.products__filter-btn {
+                    margin-left: 30px;
+                }
+            }
+        }
+        &__gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 30px;
+            &-item {
+                box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+                border-radius: 10px;
+                text-align: center;
+                width: 270px;
+                height: 370px;
+                padding: 30px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                position: relative;
+                overflow: hidden;
+                &:hover .galerry__item-navigation {
+                    top: 50%;
+                }
+            }
+            &-img {
+                margin: 0 auto;
+            }
+            &-title {
+                margin-top: 40px;
+                @extend %DMSans-500;
+                color: #243f4d;
+            }
+            &-cost {
+                display: block;
+                @extend %DMSans-700;
+                font-size: 16px;
+                color: #a3bbc8;
+            }
+        }
+    }
+    
+    .mixitup-control-active {
+        color: #000
+    }
+    
+    .galerry__item-navigation {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -500px;
+        transition: all .5s;
+    }
+    
+    .navigation-box {
+        border-radius: 50%;
+        padding: 15px 12px 8px;
+        background-color: #fff;
+        line-height: 40px;
+        transition: all 0.5s;
+        &:hover path {
+            fill: #fff;
+        }
+        &:hover {
+            background-color: #a3bac7;
+        }
+        &+.navigation-box {
+            margin-left: 16px;
+        }
+    }
+    
+    -------------------------------------------------- .footer {
         color: #7b7b7b;
         font-size: 14px;
         line-height: 24px;
