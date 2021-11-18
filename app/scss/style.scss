@@ -83,28 +83,22 @@
     // --------------------------------------------------
     .slider {
         background-color: #fcd7b6;
-        min-height: calc(100vh - (153px + 180px));
+        padding-top: 95px;
+        padding-bottom: 60px;
+        min-height: 85vh;
         display: flex;
         align-items: center;
-        &--bcg {
-            position: absolute;
-            z-index: 1;
-            right: 0;
-            right: -130px;
-            bottom: -100px;
-        }
         &__inner {
-            z-index: 4;
-            position: relative;
+            transition: 0.5s;
         }
         &__box {
             display: flex !important;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 200px;
             position: relative;
             &-info {
                 max-width: 410px;
+                // margin-left: 100px;
             }
         }
         &__title {
@@ -136,14 +130,14 @@
     }
     
     .container--moon {
-        position: relative;
+        max-width: 1330px;
     }
     
     .slick-dots {
         @extend %Rubik-500;
         display: flex;
         justify-content: center;
-        margin-bottom: -180px;
+        margin-top: 30px !important;
         li {
             margin: 0 6px;
         }
@@ -154,11 +148,16 @@
             border: none;
             border-radius: 50%;
             padding: 15px;
+            transition: all 0.5s;
         }
     }
     
     .slick-dots li+.slick-dots li {
         margin-left: 12px;
+    }
+    
+    .slick-active button {
+        background-color: #fff;
     }
     
     // -------------------------------------------------- 
