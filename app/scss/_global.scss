@@ -25,7 +25,7 @@ main {
     flex-grow: 1;
 }
 
-.container__top {
+.container-big {
     max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
@@ -43,4 +43,15 @@ main {
     color: #000;
     text-align: center;
     margin-bottom: 40px;
+}
+
+.btn {
+    @extend %Rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 27px;
+    max-width: 200px;
 }

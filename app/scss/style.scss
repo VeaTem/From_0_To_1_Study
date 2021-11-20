@@ -116,15 +116,7 @@
             margin-bottom: 45px;
         }
         &__btn {
-            @extend %Rubik-500;
             color: #fff;
-            font-size: 15px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 24px 27px;
-            max-width: 200px;
             background-color: #a3bbc8;
         }
     }
@@ -198,7 +190,7 @@
     
     // --------------------------------------------------
     .products {
-        margin-bottom: 80px;
+        margin-bottom: 190px;
         &__filter {
             text-align: center;
             @extend %DMSans-700;
@@ -284,6 +276,50 @@
         }
         &+.navigation-box {
             margin-left: 16px;
+        }
+    }
+    
+    // -------------------------------------------------- 
+    .vip {
+        margin-bottom: 100px;
+        &__inner {
+            display: flex;
+        }
+        &__box {
+            max-width: 870px;
+            width: 100%;
+            padding: 95px 0;
+            overflow: visible;
+            background-color: #feefe2;
+            &-info {
+                max-width: 270px;
+                margin-left: 400px;
+                position: relative;
+                color: #243f4d;
+            }
+            &-img {
+                position: absolute;
+                left: -275px;
+                bottom: 0;
+            }
+            &-title {
+                @extend %DMSans-700;
+                font-size: 26px;
+                line-height: 32px;
+                margin-bottom: 32px;
+            }
+            &-text {
+                @extend %Rubik-400;
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+            &-btn {
+                border: 1px solid #243f4d;
+                border-radius: 5px;
+            }
+        }
+        &__box+.vip__box {
+            margin-left: 30px;
         }
     }
     
