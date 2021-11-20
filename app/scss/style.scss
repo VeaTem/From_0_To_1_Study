@@ -289,6 +289,7 @@
     
     // -------------------------------------------------- 
     .design {
+        margin-bottom: 121px;
         &__items {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -310,6 +311,20 @@
                 font-size: 16px;
                 color: #a3bbc8;
             }
+        }
+    }
+    
+    // -------------------------------------------------- 
+    .video {
+        &-popup {
+            background-image: url(../images/video__bcg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     
