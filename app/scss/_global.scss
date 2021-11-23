@@ -55,3 +55,44 @@ main {
     padding: 24px 27px;
     max-width: 200px;
 }
+
+.breadcrumbs {
+    background-color: #edf1f4;
+    padding: 36px 0;
+    margin-bottom: 120px;
+    text-align: center;
+    &__title {
+        @extend %Rubik-400;
+        font-size: 36px;
+        line-height: 24px;
+        color: #222933;
+        margin-bottom: 10px;
+    }
+}
+
+.breadcrumbs__list {
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737980;
+    display: flex;
+    justify-content: center;
+    &-item {
+        position: relative;
+        margin-right: 20px;
+    }
+    &-item::before {
+        position: absolute;
+        content: "/";
+        left: -14px;
+        top: 1px;
+        width: 7px;
+        height: 13px;
+    }
+    &-item:first-child::before {
+        display: none;
+    }
+    &-item:last-child {
+        margin-right: 0;
+    }
+}
