@@ -1,0 +1,107 @@
+.login {
+    background-color: #edf1f4;
+    padding: 36px 0;
+    margin-bottom: 120px;
+    text-align: center;
+    &__title {
+        @extend %Rubik-400;
+        font-size: 36px;
+        line-height: 24px;
+        color: #222933;
+        margin-bottom: 10px;
+    }
+}
+
+.breadcrumbs {
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737980;
+    display: flex;
+    justify-content: center;
+    &__item {
+        position: relative;
+        margin-right: 20px;
+    }
+    &__item::before {
+        position: absolute;
+        content: "/";
+        left: -14px;
+        top: 1px;
+        width: 7px;
+        height: 13px;
+    }
+    &__item:first-child::before {
+        display: none;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+}
+
+.modal-form {
+    margin: 0 auto;
+    max-width: 500px;
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #436372;
+    margin-bottom: 120px;
+    & button {
+        cursor: pointer;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        &-check {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__input {
+        width: 100%;
+        margin-top: 14px;
+        padding: 9px;
+        height: 60px;
+        border: 1px solid #f6f6f6;
+    }
+    &__btn {
+        border: none;
+        background-color: #a3bbc8;
+        color: #fff;
+        padding: 18px 0;
+        font-size: 18px;
+        @extend %Rubik-500;
+    }
+    &__box {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #f6f6f6;
+        & input {
+            margin-right: 10px;
+        }
+    }
+}
+
+.register {
+    &-error {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &-btn {
+        padding: 18px 0;
+        font-size: 18px;
+        @extend %Rubik-500;
+        border: 2px solid #a3bbc8;
+        color: #243f4d;
+        background-color: #fff;
+    }
+}

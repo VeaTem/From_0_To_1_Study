@@ -2,6 +2,7 @@
         @import "fonts";
         @import "reset";
         @import "libs";
+        @import "login";
         @import "global";
         // --------------------------------------------------
         .header {
@@ -438,6 +439,9 @@
                 display: flex;
                 justify-content: space-around;
                 padding: 260px 0px 90px;
+                &--small {
+                    padding: 90px 0;
+                }
             }
         }
         
