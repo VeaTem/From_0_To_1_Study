@@ -4,6 +4,7 @@
         @import "libs";
         @import "login";
         @import "terms";
+        @import "about";
         @import "error";
         @import "global";
         // --------------------------------------------------
@@ -376,10 +377,14 @@
                 justify-content: space-between;
                 margin-bottom: 15px;
             }
+            &__subtitle {
+                color: #243f4d
+            }
             &__link {
                 @extend %DMSans-700;
                 font-size: 16px;
                 line-height: 20px;
+                color: #243f4d;
                 &-img {
                     margin-left: 10px;
                 }
