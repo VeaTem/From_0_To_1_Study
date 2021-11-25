@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highway to Star</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -90,10 +90,9 @@
 
 
     <main class="main">
-
         <section class="breadcrumbs">
             <h4 class="breadcrumbs__title">
-                404 NOT FOUND :C
+                Log in
             </h4>
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__list-item">
@@ -102,11 +101,45 @@
                     </a>
                 </li>
                 <li class="breadcrumbs__list-item">
-                    404 NOT FOUND :C
+                    Log in
                 </li>
             </ul>
         </section>
 
+        <form class="modal-form" action="#">
+            <div class="container">
+                <div class="modal-form__inner">
+
+                    <label class="modal-form__label">
+                    Username or email address *
+                    <input class="modal-form__input" type="email" required>
+                    </label>
+
+
+                    <label class="modal-form__label">
+                    Password *
+                    <input class="modal-form__input" type="password" required>
+                    </label>
+
+                    <button class="modal-form__btn" type="submit">
+                        Login
+                    </button>
+
+                    <div class="modal-form__box">
+                        <label class="modal-form__label-check">
+                        <input type="checkbox">
+                             Remember me
+                        </label>
+                        <a class="modal-form__link" href="#">
+                             Lost your password?
+                        </a>
+                    </div>
+                    <a class="register-error" href="#">Not registered? No problem</a>
+
+                    <button class="register-btn">Create an account</button>
+                </div>
+            </div>
+        </form>
 
 
 
@@ -120,6 +153,18 @@
 
 
 
+
+        <section class="companions ">
+            <div class="container">
+                <div class="companions__inner companions__inner--small">
+                    <img class="companions-img" src="images/partner1.png" alt="img">
+                    <img class="companions-img" src="images/partner2.png" alt="img">
+                    <img class="companions-img" src="images/partner3.png" alt="img">
+                    <img class="companions-img" src="images/partner4.png" alt="img">
+                    <img class="companions-img" src="images/partner5.png" alt="img">
+                </div>
+            </div>
+        </section>
     </main>
 
 
