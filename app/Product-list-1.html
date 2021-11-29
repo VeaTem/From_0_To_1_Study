@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="container-big">
             <div class="header__inner">
                 <a class="logo" href="#">
                     <img class="logo__img" src="images/logo.png" alt="logo">
@@ -110,6 +110,8 @@
         <section class="product__list">
             <div class="container">
                 <div class="product__inner">
+
+                    <!-- --------------------------------------------------------------- -->
                     <div class="product__category">
                         <div class="product-filter">
                             <h5 class="product-filter__title">
@@ -154,6 +156,7 @@
                             </div>
                         </div>
 
+                        <!-- --------------------------------------------------------------- -->
 
                         <div class="product__price">
                             <div class="product-filter">
@@ -163,7 +166,7 @@
 
                                 <div class="price-filter">
                                     <form class="price-filter__form" action="#">
-                                        <input class="price-filter__input" type="text" data-type="double" data-min="0" data-max="1000" data-from="100.00" data-to="500.00" data-step="0.55">
+                                        <input class="price-filter__input" type="text" data-type="double" data-min="0" data-max="1000" data-from="100.00" data-to="500.00" data-prettify_enabled="true" data-prettify_separator="," data-step="0.1">
                                         <label class="price-filter__label">
                                             <div class="price-filter__label-box">
                                                 $<span class="price-filter__from"></span>
@@ -176,7 +179,60 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- --------------------------------------------------------------- -->
+
+                        <div class="product-brand">
+                            <div class="product-filter">
+                                <h5 class="product-filter__title">
+                                    category
+                                </h5>
+
+                                <div class="brand-filter">
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">RFL</span>
+                                            <span>(10)</span>
+                                        </div>
+                                    </label>
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">Brothers</span>
+                                            <span>(21)</span>
+                                        </div>
+                                    </label>
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">Regal</span>
+                                            <span>(3)</span>
+                                        </div>
+                                    </label>
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">Nadia</span>
+                                            <span>(14)</span>
+                                        </div>
+                                    </label>
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">Otobi</span>
+                                            <span>(6)</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- --------------------------------------------------------------- -->
+
                     </div>
+
+
 
 
 
