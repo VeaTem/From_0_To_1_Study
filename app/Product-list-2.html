@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highway to Star</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-big">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <div class="menu__list-items">
+                            <a class="menu__list-link" href="http://localhost:3000">
+                                Home+
+                            </a>
+                        </div>
+                        <div class="menu__list-items">
+                            <a class="menu__list-link" href="#">
+                                About
+                            </a>
+                        </div>
+                        <div class="menu__list-items">
+                            <a class="menu__list-link" href="#">
+                                Services
+                            </a>
+                        </div>
+                        <div class="menu__list-items">
+                            <a class="menu__list-link" href="#">
+                                Pages+
+                            </a>
+                        </div>
+                        <div class="menu__list-items">
+                            <a class="menu__list-link" href="#">
+                                News
+                            </a>
+                        </div>
+                        <div class="menu__list-items">
+                            <a class="menu__list-link" href="#">
+                                Contact
+                            </a>
+                        </div>
+                    </ul>
+                </nav>
+
+                <div class="user-nav">
+                    <a class="user-nav__link user-nav__link--search" href="#">
+                        <img class="user__nav-link__img" src="images/icons/search.svg" alt="search">
+                    </a>
+
+                    <div class="user-nav__link-inner">
+                        <div class="user-nav__link-box">
+                            <a class="user-nav__link" href="#">
+                                <span class="user-nav__link-num">0</span>
+                                <img class="user__nav-link__img" src="images/icons/heart.svg" alt="favorites">
+                            </a>
+                        </div>
+
+
+                        <div class="user-nav__link-box">
+                            <a class="user-nav__link" href="#">
+                                <span class="user-nav__link-num">0</span>
+                                <img class="user__nav-link__img" src="images/icons/cart.svg" alt="cart">
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <a class="user-nav__link user-nav__link--menu" href="#">
+                        <img class="user__nav-link__img" src="images/icons/menu__btn.svg" alt="menu">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <main class="main">
+
+        <section class="breadcrumbs">
+            <h4 class="breadcrumbs__title">
+                Product list 1
+            </h4>
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    Product list 1
+                </li>
+            </ul>
+        </section>
+
+        <section class="product__list">
+            <div class="container">
+                <div class="product__inner">
+
+                    <!-- --------------------------------------------------------------- -->
+                    <div class="product__category">
+                        <div class="product-filter">
+                            <h5 class="product-filter__title">
+                                category
+                            </h5>
+                            <div class="product-filter__box">
+                                <label class="product-filter__label">
+                                <input class="product-filter__input" type="checkbox">
+                                <div class="product-filter__checkbox">
+                                    <span>Chair</span>
+                                    <span>></span>
+                                </div>
+                            </label>
+                                <label class="product-filter__label">
+                                <input class="product-filter__input" type="checkbox">
+                                <div class="product-filter__checkbox">
+                                    <span>Table</span>
+                                    <span>></span>
+                                </div>
+                            </label>
+                                <label class="product-filter__label">
+                                <input class="product-filter__input" type="checkbox">
+                                <div class="product-filter__checkbox">
+                                    <span>Lamp</span>
+                                    <span>></span>
+                                </div>
+                            </label>
+                                <label class="product-filter__label">
+                                <input class="product-filter__input" type="checkbox">
+                                <div class="product-filter__checkbox">
+                                    <span>Watch</span>
+                                    <span>></span>
+                                </div>
+                            </label>
+                                <label class="product-filter__label">
+                                <input class="product-filter__input" type="checkbox">
+                                <div class="product-filter__checkbox">
+                                    <span>Clock</span>
+                                    <span>></span>
+                                </div>
+                            </label>
+                            </div>
+                        </div>
+
+                        <!-- --------------------------------------------------------------- -->
+
+                        <div class="product__price">
+                            <div class="product-filter">
+                                <h5 class="product-filter__title">
+                                    price
+                                </h5>
+
+                                <div class="price-filter">
+                                    <form class="price-filter__form" action="#">
+                                        <input class="price-filter__input" type="text" data-type="double" data-min="0" data-max="1000" data-from="100.00" data-to="500.00" data-prettify_enabled="true" data-prettify_separator="," data-step="0.1">
+                                        <label class="price-filter__label">
+                                            <div class="price-filter__label-box">
+                                                $<span class="price-filter__from"></span>
+                                            </div>
+                                            <div class="price-filter__label-box">
+                                                $<span class="price-filter__to"></span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- --------------------------------------------------------------- -->
+
+                        <div class="product-brand">
+                            <div class="product-filter">
+                                <h5 class="product-filter__title">
+                                    category
+                                </h5>
+
+                                <div class="brand-filter">
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">RFL</span>
+                                            <span>(10)</span>
+                                        </div>
+                                    </label>
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">Brothers</span>
+                                            <span>(21)</span>
+                                        </div>
+                                    </label>
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">Regal</span>
+                                            <span>(3)</span>
+                                        </div>
+                                    </label>
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">Nadia</span>
+                                            <span>(14)</span>
+                                        </div>
+                                    </label>
+                                    <label class="brand-filter__label">
+                                        <input class="brand-filter__input" type="checkbox">
+                                        <div class="brand-filter__checkbox">
+                                            <span class="brand-filter__checkbox-item">Otobi</span>
+                                            <span>(6)</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- --------------------------------------------------------------- -->
+
+                        <div class="recomendation-product">
+                            <div class="product-filter">
+                                <h5 class="product-filter__title">
+                                    RECENT PRODUCTS
+                                </h5>
+
+                                <div class="recomendation-product__inner">
+                                    <div class="recomendation-box">
+                                        <a class="recomendation__link" href="#">
+                                            <img class="recomendation__img-link" src="images/recomendation.1png.png" alt="img">
+                                        </a>
+
+                                        <div class="recomendation__info">
+                                            <a class="recomendation__title-link" href="#">
+                                                <h5 class="recomendation__title">Pendant lamp</h5>
+                                            </a>
+                                            <div class="rating" data-rateyo-rating="1"></div>
+                                            <span class="recomendation__cost">23$</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="recomendation-box">
+                                        <a class="recomendation__link" href="#">
+                                            <img class="recomendation__img-link" src="images/recomendation.2png.png" alt="img">
+                                        </a>
+
+                                        <div class="recomendation__info">
+                                            <a class="recomendation__title-link" href="#">
+                                                <h5 class="recomendation__title">Pendant lamp</h5>
+                                            </a>
+                                            <div class="rating" data-rateyo-rating="3"></div>
+                                            <span class="recomendation__cost">23$</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="recomendation-box">
+                                        <a class="recomendation__link" href="#">
+                                            <img class="recomendation__img-link" src="images/recomendation.3png.png" alt="img">
+                                        </a>
+
+                                        <div class="recomendation__info">
+                                            <a class="recomendation__title-link" href="#">
+                                                <h5 class="recomendation__title">Pendant lamp</h5>
+                                            </a>
+                                            <div class="rating" data-rateyo-rating="5"></div>
+                                            <span class="recomendation__cost">23$</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="products-list">
+                        <div class="products-list__inner">
+                            <div class="products-list__box">
+                                <div class="products-list__img-box">
+                                    <img class="products-list__img" src="images/pli_1.png" alt="img">
+                                </div>
+
+                                <div class="products-list__info">
+                                    <h4 class="products-list__title">
+                                        Wooden radio
+                                    </h4>
+                                    <div class="products-list__info-rating" data-rateyo-rating="4"></div>
+                                    <span class="products-list__cost">23$</span>
+                                    <p class="products-list__text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <div class="product-list__btn-box">
+                                        <button class="products-list__btn-small">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="22px" height="20px">
+                                                <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+                                                d="M21.933,5.215 L18.217,13.775 C18.81,14.74 17.796,14.264 17.471,14.264 L7.256,14.264 C6.890,14.264 6.565,14.19 6.470,13.666 L3.146,1.628 L0.813,1.628 C0.366,1.628 0.0,1.261 0.0,0.814 C0.0,0.365 0.366,0.2 0.813,0.2 L3.757,0.2 C4.123,0.2 4.449,0.242 4.543,0.596 L7.867,12.633 L16.928,12.633 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.88,5.338 9.88,4.889 C9.88,4.440 9.454,4.74 9.902,4.74 L21.187,4.74 C21.459,4.74 21.716,4.210 21.866,4.440 C22.15,4.672 22.42,4.957 21.933,5.215 ZM6.483,16.302 C7.501,16.302 8.328,17.131 8.328,18.150 C8.328,19.169 7.501,19.998 6.483,19.998 C5.466,19.998 4.638,19.169 4.638,18.150 C4.638,17.131 5.466,16.302 6.483,16.302 ZM17.891,16.302 C18.909,16.234 19.790,17.8 19.858,18.14 C19.885,18.516 19.736,18.993 19.410,19.359 C19.85,19.739 18.637,19.957 18.149,19.998 C18.108,19.998 18.54,19.998 18.13,19.998 C17.50,19.998 16.250,19.237 16.182,18.273 C16.114,17.266 16.874,16.370 17.891,16.302 Z"/>
+                                            </svg>
+                                             <button class="products-list__btn "> Add to cart</button>
+                                        </button>
+
+
+                                        <button class="products-list__btn-small">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="22px" height="18px">
+                                                <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+                                                d="M21.989,5.820 C21.906,4.268 21.250,2.812 20.141,1.719 C19.15,0.609 17.545,0.0 16.1,0.0 C13.690,0.0 12.54,1.783 11.175,2.743 C11.124,2.798 11.71,2.856 11.18,2.913 C10.990,2.881 10.962,2.849 10.935,2.819 C10.132,1.903 8.460,0.0 5.998,0.0 C4.454,0.0 2.984,0.609 1.858,1.719 C0.749,2.812 0.93,4.268 0.10,5.820 C0.72,7.361 0.319,8.700 1.280,10.157 C2.141,11.465 4.384,13.532 6.43,14.905 C7.748,16.316 9.994,17.998 11.9,17.998 C12.40,17.998 14.278,16.319 15.973,14.911 C17.619,13.544 19.850,11.479 20.719,10.157 C21.366,9.174 22.95,7.791 21.989,5.820 ZM19.613,9.430 C18.981,10.391 17.201,12.166 15.183,13.847 C12.776,15.852 11.352,16.642 11.10,16.673 C10.669,16.638 9.241,15.840 6.822,13.831 C4.792,12.145 3.9,10.377 2.386,9.429 C1.590,8.223 1.265,7.131 1.332,5.891 C1.466,3.372 3.560,1.321 5.998,1.321 C7.860,1.321 9.214,2.864 9.941,3.692 C10.368,4.179 10.604,4.447 11.0,4.447 C11.408,4.447 11.672,4.160 12.150,3.637 C12.944,2.771 14.272,1.321 16.1,1.321 C18.439,1.321 20.533,3.372 20.667,5.891 C20.734,7.145 20.419,8.204 19.613,9.430 Z"/>
+                                        </svg>
+                                        <button class="products-list__btn "> Add to favorite</button>
+                                        </button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products-list__box">
+                                <div class="products-list__img-box">
+                                    <img class="products-list__img" src="images/pli_2.png" alt="img">
+                                </div>
+
+                                <div class="products-list__info">
+                                    <h4 class="products-list__title">
+                                        Wooden radio
+                                    </h4>
+                                    <div class=" products-list__info-rating" data-rateyo-rating="4"></div>
+                                    <span class="products-list__cost">23$</span>
+                                    <p class="products-list__text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <div class="product-list__btn-box">
+                                        <button class="products-list__btn-small">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="22px" height="20px">
+                                                <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+                                                d="M21.933,5.215 L18.217,13.775 C18.81,14.74 17.796,14.264 17.471,14.264 L7.256,14.264 C6.890,14.264 6.565,14.19 6.470,13.666 L3.146,1.628 L0.813,1.628 C0.366,1.628 0.0,1.261 0.0,0.814 C0.0,0.365 0.366,0.2 0.813,0.2 L3.757,0.2 C4.123,0.2 4.449,0.242 4.543,0.596 L7.867,12.633 L16.928,12.633 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.88,5.338 9.88,4.889 C9.88,4.440 9.454,4.74 9.902,4.74 L21.187,4.74 C21.459,4.74 21.716,4.210 21.866,4.440 C22.15,4.672 22.42,4.957 21.933,5.215 ZM6.483,16.302 C7.501,16.302 8.328,17.131 8.328,18.150 C8.328,19.169 7.501,19.998 6.483,19.998 C5.466,19.998 4.638,19.169 4.638,18.150 C4.638,17.131 5.466,16.302 6.483,16.302 ZM17.891,16.302 C18.909,16.234 19.790,17.8 19.858,18.14 C19.885,18.516 19.736,18.993 19.410,19.359 C19.85,19.739 18.637,19.957 18.149,19.998 C18.108,19.998 18.54,19.998 18.13,19.998 C17.50,19.998 16.250,19.237 16.182,18.273 C16.114,17.266 16.874,16.370 17.891,16.302 Z"/>
+                                            </svg>
+                                             <button class="products-list__btn "> Add to cart</button>
+                                        </button>
+
+
+                                        <button class="products-list__btn-small">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="22px" height="18px">
+                                                <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+                                                d="M21.989,5.820 C21.906,4.268 21.250,2.812 20.141,1.719 C19.15,0.609 17.545,0.0 16.1,0.0 C13.690,0.0 12.54,1.783 11.175,2.743 C11.124,2.798 11.71,2.856 11.18,2.913 C10.990,2.881 10.962,2.849 10.935,2.819 C10.132,1.903 8.460,0.0 5.998,0.0 C4.454,0.0 2.984,0.609 1.858,1.719 C0.749,2.812 0.93,4.268 0.10,5.820 C0.72,7.361 0.319,8.700 1.280,10.157 C2.141,11.465 4.384,13.532 6.43,14.905 C7.748,16.316 9.994,17.998 11.9,17.998 C12.40,17.998 14.278,16.319 15.973,14.911 C17.619,13.544 19.850,11.479 20.719,10.157 C21.366,9.174 22.95,7.791 21.989,5.820 ZM19.613,9.430 C18.981,10.391 17.201,12.166 15.183,13.847 C12.776,15.852 11.352,16.642 11.10,16.673 C10.669,16.638 9.241,15.840 6.822,13.831 C4.792,12.145 3.9,10.377 2.386,9.429 C1.590,8.223 1.265,7.131 1.332,5.891 C1.466,3.372 3.560,1.321 5.998,1.321 C7.860,1.321 9.214,2.864 9.941,3.692 C10.368,4.179 10.604,4.447 11.0,4.447 C11.408,4.447 11.672,4.160 12.150,3.637 C12.944,2.771 14.272,1.321 16.1,1.321 C18.439,1.321 20.533,3.372 20.667,5.891 C20.734,7.145 20.419,8.204 19.613,9.430 Z"/>
+                                        </svg>
+                                        <button class="products-list__btn "> Add to favorite</button>
+                                        </button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products-list__box">
+                                <div class="products-list__img-box">
+                                    <img class="products-list__img" src="images/pli_3.png" alt="img">
+                                </div>
+
+                                <div class="products-list__info">
+                                    <h4 class="products-list__title">
+                                        Wooden radio
+                                    </h4>
+                                    <div class="products-list__info-rating" data-rateyo-rating="4"></div>
+                                    <span class="products-list__cost">23$</span>
+                                    <p class="products-list__text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <div class="product-list__btn-box">
+                                        <button class="products-list__btn-small">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="22px" height="20px">
+                                                <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+                                                d="M21.933,5.215 L18.217,13.775 C18.81,14.74 17.796,14.264 17.471,14.264 L7.256,14.264 C6.890,14.264 6.565,14.19 6.470,13.666 L3.146,1.628 L0.813,1.628 C0.366,1.628 0.0,1.261 0.0,0.814 C0.0,0.365 0.366,0.2 0.813,0.2 L3.757,0.2 C4.123,0.2 4.449,0.242 4.543,0.596 L7.867,12.633 L16.928,12.633 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.88,5.338 9.88,4.889 C9.88,4.440 9.454,4.74 9.902,4.74 L21.187,4.74 C21.459,4.74 21.716,4.210 21.866,4.440 C22.15,4.672 22.42,4.957 21.933,5.215 ZM6.483,16.302 C7.501,16.302 8.328,17.131 8.328,18.150 C8.328,19.169 7.501,19.998 6.483,19.998 C5.466,19.998 4.638,19.169 4.638,18.150 C4.638,17.131 5.466,16.302 6.483,16.302 ZM17.891,16.302 C18.909,16.234 19.790,17.8 19.858,18.14 C19.885,18.516 19.736,18.993 19.410,19.359 C19.85,19.739 18.637,19.957 18.149,19.998 C18.108,19.998 18.54,19.998 18.13,19.998 C17.50,19.998 16.250,19.237 16.182,18.273 C16.114,17.266 16.874,16.370 17.891,16.302 Z"/>
+                                            </svg>
+                                             <button class="products-list__btn "> Add to cart</button>
+                                        </button>
+
+
+                                        <button class="products-list__btn-small">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="22px" height="18px">
+                                                <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+                                                d="M21.989,5.820 C21.906,4.268 21.250,2.812 20.141,1.719 C19.15,0.609 17.545,0.0 16.1,0.0 C13.690,0.0 12.54,1.783 11.175,2.743 C11.124,2.798 11.71,2.856 11.18,2.913 C10.990,2.881 10.962,2.849 10.935,2.819 C10.132,1.903 8.460,0.0 5.998,0.0 C4.454,0.0 2.984,0.609 1.858,1.719 C0.749,2.812 0.93,4.268 0.10,5.820 C0.72,7.361 0.319,8.700 1.280,10.157 C2.141,11.465 4.384,13.532 6.43,14.905 C7.748,16.316 9.994,17.998 11.9,17.998 C12.40,17.998 14.278,16.319 15.973,14.911 C17.619,13.544 19.850,11.479 20.719,10.157 C21.366,9.174 22.95,7.791 21.989,5.820 ZM19.613,9.430 C18.981,10.391 17.201,12.166 15.183,13.847 C12.776,15.852 11.352,16.642 11.10,16.673 C10.669,16.638 9.241,15.840 6.822,13.831 C4.792,12.145 3.9,10.377 2.386,9.429 C1.590,8.223 1.265,7.131 1.332,5.891 C1.466,3.372 3.560,1.321 5.998,1.321 C7.860,1.321 9.214,2.864 9.941,3.692 C10.368,4.179 10.604,4.447 11.0,4.447 C11.408,4.447 11.672,4.160 12.150,3.637 C12.944,2.771 14.272,1.321 16.1,1.321 C18.439,1.321 20.533,3.372 20.667,5.891 C20.734,7.145 20.419,8.204 19.613,9.430 Z"/>
+                                        </svg>
+                                        <button class="products-list__btn "> Add to favorite</button>
+                                        </button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products-list__box">
+                                <div class="products-list__img-box">
+                                    <img class="products-list__img" src="images/pli_4.png" alt="img">
+                                </div>
+
+                                <div class="products-list__info">
+                                    <h4 class="products-list__title">
+                                        Wooden radio
+                                    </h4>
+                                    <div class="products-list__info-rating" data-rateyo-rating="4"></div>
+                                    <span class="products-list__cost">23$</span>
+                                    <p class="products-list__text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <div class="product-list__btn-box">
+                                        <button class="products-list__btn-small">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="22px" height="20px">
+                                                <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+                                                d="M21.933,5.215 L18.217,13.775 C18.81,14.74 17.796,14.264 17.471,14.264 L7.256,14.264 C6.890,14.264 6.565,14.19 6.470,13.666 L3.146,1.628 L0.813,1.628 C0.366,1.628 0.0,1.261 0.0,0.814 C0.0,0.365 0.366,0.2 0.813,0.2 L3.757,0.2 C4.123,0.2 4.449,0.242 4.543,0.596 L7.867,12.633 L16.928,12.633 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.88,5.338 9.88,4.889 C9.88,4.440 9.454,4.74 9.902,4.74 L21.187,4.74 C21.459,4.74 21.716,4.210 21.866,4.440 C22.15,4.672 22.42,4.957 21.933,5.215 ZM6.483,16.302 C7.501,16.302 8.328,17.131 8.328,18.150 C8.328,19.169 7.501,19.998 6.483,19.998 C5.466,19.998 4.638,19.169 4.638,18.150 C4.638,17.131 5.466,16.302 6.483,16.302 ZM17.891,16.302 C18.909,16.234 19.790,17.8 19.858,18.14 C19.885,18.516 19.736,18.993 19.410,19.359 C19.85,19.739 18.637,19.957 18.149,19.998 C18.108,19.998 18.54,19.998 18.13,19.998 C17.50,19.998 16.250,19.237 16.182,18.273 C16.114,17.266 16.874,16.370 17.891,16.302 Z"/>
+                                            </svg>
+                                             <button class="products-list__btn "> Add to cart</button>
+                                        </button>
+
+
+                                        <button class="products-list__btn-small">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="22px" height="18px">
+                                                <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+                                                d="M21.989,5.820 C21.906,4.268 21.250,2.812 20.141,1.719 C19.15,0.609 17.545,0.0 16.1,0.0 C13.690,0.0 12.54,1.783 11.175,2.743 C11.124,2.798 11.71,2.856 11.18,2.913 C10.990,2.881 10.962,2.849 10.935,2.819 C10.132,1.903 8.460,0.0 5.998,0.0 C4.454,0.0 2.984,0.609 1.858,1.719 C0.749,2.812 0.93,4.268 0.10,5.820 C0.72,7.361 0.319,8.700 1.280,10.157 C2.141,11.465 4.384,13.532 6.43,14.905 C7.748,16.316 9.994,17.998 11.9,17.998 C12.40,17.998 14.278,16.319 15.973,14.911 C17.619,13.544 19.850,11.479 20.719,10.157 C21.366,9.174 22.95,7.791 21.989,5.820 ZM19.613,9.430 C18.981,10.391 17.201,12.166 15.183,13.847 C12.776,15.852 11.352,16.642 11.10,16.673 C10.669,16.638 9.241,15.840 6.822,13.831 C4.792,12.145 3.9,10.377 2.386,9.429 C1.590,8.223 1.265,7.131 1.332,5.891 C1.466,3.372 3.560,1.321 5.998,1.321 C7.860,1.321 9.214,2.864 9.941,3.692 C10.368,4.179 10.604,4.447 11.0,4.447 C11.408,4.447 11.672,4.160 12.150,3.637 C12.944,2.771 14.272,1.321 16.1,1.321 C18.439,1.321 20.533,3.372 20.667,5.891 C20.734,7.145 20.419,8.204 19.613,9.430 Z"/>
+                                        </svg>
+                                        <button class="products-list__btn "> Add to favorite</button>
+                                        </button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="pagination ">
+                            <ul class="pagination-list pagination-list--left">
+                                <li class="pagination-list__item pagination-list__item">
+                                    <a class="pagination-list__link pagination-list__link--active" href="#">1</a>
+                                </li>
+                                <li class="pagination-list__item">
+                                    <a class="pagination-list__link" href="#">2</a>
+                                </li>
+                                <li class="pagination-list__item">
+                                    <a class="pagination-list__link" href="#">3</a>
+                                </li>
+                                <li class="pagination-list__item">
+                                    <a class="pagination-list__link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="companions">
+            <div class="container">
+                <div class="companions__inner companions__inner--small">
+                    <img class="companions-img" src="images/partner1.png" alt="img">
+                    <img class="companions-img" src="images/partner2.png" alt="img">
+                    <img class="companions-img" src="images/partner3.png" alt="img">
+                    <img class="companions-img" src="images/partner4.png" alt="img">
+                    <img class="companions-img" src="images/partner5.png" alt="img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner-top">
+                <div class="footer__box">
+                    <a class="logo footer__logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                ADDRESS: 4772 Wines Lane Houston, TX 77032
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="tel:+8323475843">
+                                Telephone: +832-347-5843 
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Email: contact@Glee.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h4 class="footer__title">services</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Return Policy   
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Our Blog   
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Contact Us   
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Terms & Condition
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h4 class="footer__title">account</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Your Account
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Checkout
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Login
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box footer__form-box">
+                    <h4 class="footer__title">newsletter</h4>
+                    <p class="footer__text">
+                        Subscribe by our newsletter and get update protidin.
+                    </p>
+                    <form class="footer__form" action="#">
+                        <input class="form__email" type="email" placeholder="Email address" required>
+                        <button class="form__btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <div class="footer__inner-bottom">
+                <p class="copyright">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+                <div class="footer__links">
+                    <ul class="footer__list-bottom">
+                        <ul class="footer__list-bottom__item">
+                            <a class="footer__list-bottom__link" href="#">
+                                Home
+                            </a>
+                        </ul>
+                        <ul class="footer__list-bottom__item">
+                            <a class="footer__list-bottom__link" href="#">
+                                About
+                            </a>
+                        </ul>
+                        <ul class="footer__list-bottom__item">
+                            <a class="footer__list-bottom__link" href="#">
+                                Blog
+                            </a>
+                        </ul>
+                        <ul class="footer__list-bottom__item">
+                            <a class="footer__list-bottom__link" href="#">
+                                Contact
+                            </a>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
