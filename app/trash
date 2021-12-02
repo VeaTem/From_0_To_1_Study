@@ -1,0 +1,8 @@
+<div class="product-info__btn-box">
+    <button class="counter-btn">-</button>
+    <span class="counter-btn">1</span>
+    <button class="counter-btn">+</button>
+</div>
+
+
+.counter-btn { display: flex; align-items: center; justify-content: center; width: 49px; height: 49px; padding: 15px; overflow: hidden; background-color: #fff; border: 1px solid #a3bbc8; font-size: 15px; color: #333333; }

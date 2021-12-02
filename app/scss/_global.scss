@@ -96,3 +96,25 @@ main {
         margin-right: 0;
     }
 }
+
+.pagination {
+    color: #243f4d;
+    font-size: 16px;
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__link {
+            padding: 14px 19px;
+            border: 1px solid #a3bbc8;
+            line-height: 0;
+            &--active {
+                background-color: #a3bbc8;
+                color: #fff;
+            }
+        }
+        &__item+.pagination-list__item {
+            margin-left: 15px;
+        }
+    }
+}
