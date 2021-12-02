@@ -39,10 +39,31 @@
 
      // _____________________________________________________________________________________
 
+     $('.product-info__input-num').styler();
+
+     // _____________________________________________________________________________________
+
 
      $('.slider__inner').slick({
          arrows: false,
          dots: true,
+     });
+
+     $('.product-slider__mini').slick({
+         asNavFor: '.product-slider__big',
+         arrows: false,
+         draggable: false,
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         vertical: true,
+         focusOnSelect: true
+     });
+     $('.product-slider__big').slick({
+         asNavFor: '.product-slider__mini',
+         draggable: false,
+         arrows: false,
+         fade: true,
+         speed: 900
      });
 
      // _____________________________________________________________________________________
@@ -61,16 +82,6 @@
 
 
      // _____________________________________________________________________________________
-
-     //  $('.products-list__btn-small').on('click', function() {
-     //      $('.products-list__btn').removeClass('products-list__btn--active');
-     //      $('.products-list__btn').addClass('products-list__btn--active');
-     //  })
-
-     $(".products-list__btn-small").click(function() {
-         $(".products-list__btn").toggleClass("products-list__btn--active");
-         return false;
-     });
 
 
  });

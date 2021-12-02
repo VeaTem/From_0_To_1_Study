@@ -8,6 +8,7 @@
         @import "error";
         @import "pl1";
         @import "pl2";
+        @import "pi";
         @import "global";
         // --------------------------------------------------
         .header {
@@ -25,6 +26,7 @@
             color: #436372;
             font-size: 15px;
             line-height: 12px;
+            margin-right: -140px;
             &-items+.menu__list-items {
                 margin-left: 30px;
             }
@@ -462,6 +464,7 @@
             line-height: 24px;
             &__logo {
                 margin-bottom: 25px;
+                display: inline-block;
             }
             &__inner-top {
                 display: flex;
