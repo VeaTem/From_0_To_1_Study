@@ -1,0 +1,165 @@
+.blog {
+    padding-bottom: 110px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-content {
+        width: 830px;
+        &__item {
+            margin-bottom: 50px;
+        }
+        &__img {
+            object-fit: cover;
+            margin-bottom: 40px;
+            &-box {
+                position: relative;
+            }
+        }
+        &__navigation {
+            position: absolute;
+            background-color: #a3bbc8;
+            left: 0;
+            bottom: 0;
+            padding: 0 27px 0 40px;
+            width: 270px;
+            height: 70px;
+            font-size: 12px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-date {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -18px;
+                    bottom: 0;
+                    width: 13px;
+                    height: 13px;
+                    background-image: url(../images/calendar-icon-white.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    top: 45%;
+                    transform: translateY(-50%);
+                }
+            }
+            &-author {
+                position: relative;
+                padding-left: 16px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 13px;
+                    height: 13px;
+                    background-image: url(../images/user-icon.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    top: 45%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 26px;
+            color: #333333;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 30px;
+            color: #243f4d;
+            margin-bottom: 40px;
+        }
+        &__btn {
+            border: 1px solid #a3bbc8;
+            color: #a3bbc8;
+            transition: all 0.5s;
+            &:hover {
+                transform: scale(110%);
+            }
+        }
+    }
+    &-aside {
+        width: 270px;
+        &__item {
+            display: flex;
+            &+.blog-aside__item {
+                margin-top: 22px;
+            }
+        }
+        &__descr {
+            margin-left: 20px;
+            &-title {
+                display: block;
+                font-size: 14px;
+                color: #333333;
+                line-height: 20px;
+            }
+            &-date {
+                margin-left: 16px;
+                font-size: 12px;
+                line-height: 30px;
+                color: #9a9a9a;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -18px;
+                    bottom: 0;
+                    width: 13px;
+                    height: 13px;
+                    background-image: url(../images/calendar-icon.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    top: 45%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+.product-filter__checkbox--active {
+    background-color: #edf1f4;
+}
+
+.filter-search {
+    margin-bottom: 50px;
+    &__form {
+        display: flex;
+        align-items: center;
+        border: 2px solid #edf1f4;
+        border-radius: 5px;
+        box-sizing: content-box;
+        height: 43px;
+    }
+    &__btn {
+        background-color: #edf1f4;
+        cursor: pointer;
+        border: none;
+        width: 48px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__input {
+        border: none;
+        outline: transparent;
+        width: 100%;
+        text-align: center;
+        padding: 0 6px;
+        @extend %Rubik-400;
+        font-size: 14px;
+        color: #243f4d;
+    }
+}
