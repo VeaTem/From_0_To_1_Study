@@ -1,0 +1,103 @@
+.contact {
+    margin-bottom: 140px;
+    &__subtitle {
+        text-align: center;
+        @extend %Poppins-700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #a3bbc8;
+    }
+    &__title {
+        text-align: center;
+        @extend %DMSans-700;
+        font-size: 35px;
+        line-height: 57px;
+        color: #436372;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+        margin-bottom: 117px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 370px;
+        height: 383px;
+        background-color: #fbfbfb;
+        &:hover {
+            border: 2px solid #a3bbc8;
+            & .contact__item-svg {
+                background-color: #a3bbc8;
+                & path {
+                    fill: #fff;
+                }
+            }
+        }
+        &-svg {
+            width: 80px;
+            height: 81px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+            margin-bottom: 60px;
+        }
+    }
+    &__list {
+        &-title {
+            @extend %DMSans-700;
+            font-size: 20px;
+            line-height: 26px;
+            color: #222222;
+            margin-bottom: 20px;
+        }
+        &-link {
+            color: #565872;
+            font-size: 16px;
+            line-height: 30px;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 2px;
+                left: 0;
+                bottom: -3px;
+                background-color: #a3bbc8;
+                transition: 0.3s ease-out;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+    &-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-input {
+        max-width: 300px;
+        &+.contact-input {
+            margin-left: 15px;
+        }
+    }
+    &-map {
+        min-width: 500px;
+        margin-left: 50px;
+    }
+}
+
+.comments-form__inner {
+    width: 100%;
+}
+
+.comments-form__btn {
+    border-radius: 5px;
+}
