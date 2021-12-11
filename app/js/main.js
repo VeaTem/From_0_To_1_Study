@@ -1,4 +1,14 @@
  $(function() {
+     // _____________________________________________________________________________________
+     $('.burger-menu__box').on('click', function() {
+         $('.header__menu').toggleClass('header__menu--active');
+     })
+
+
+
+
+     // _____________________________________________________________________________________
+
      $('.price-filter__input').ionRangeSlider({
          onStart: function(data) {
              $('.price-filter__from').text(data.from)
