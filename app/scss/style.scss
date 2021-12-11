@@ -9,6 +9,9 @@
         @import "pl1";
         @import "pl2";
         @import "pi";
+        @import "blog";
+        @import "blogDescr";
+        @import "contact";
         @import "global";
         // --------------------------------------------------
         .header {
@@ -94,8 +97,6 @@
             padding-top: 95px;
             padding-bottom: 60px;
             min-height: 824px;
-            display: flex;
-            align-items: center;
             &__inner {
                 transition: 0.5s;
             }
@@ -105,8 +106,12 @@
                 align-items: center;
                 position: relative;
                 &-info {
-                    max-width: 410px;
+                    max-width: 415px;
                     // margin-left: 100px;
+                }
+                &-img {
+                    max-width: 45%;
+                    object-fit: contain;
                 }
             }
             &__title {
@@ -127,10 +132,6 @@
                 color: #fff;
                 background-color: #a3bbc8;
             }
-        }
-        
-        .container--moon {
-            max-width: 1330px;
         }
         
         .slick-dots {
@@ -169,14 +170,17 @@
             &__inner {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
                 padding: 0 145px;
             }
             &__box {
-                display: flex;
+                position: relative;
+                padding-left: 85px;
                 &-img {
-                    margin-right: 25px;
-                    max-width: 50px;
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    left: 10px;
+                    top: 0;
                 }
                 &-text {
                     max-width: 220px;
@@ -185,7 +189,8 @@
             &__title {
                 @extend %DMSans-700;
                 font-size: 18px;
-                line-height: 40px;
+                line-height: 23px;
+                margin-bottom: 15px;
                 color: #414141;
             }
             &__text {
@@ -224,8 +229,11 @@
             &__gallery {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                grid-gap: 30px;
+                grid-row-gap: 30px;
+                grid-column-gap: 30px;
                 &-item {
+                    justify-self: center;
+                    align-self: center;
                     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
                     border-radius: 10px;
                     text-align: center;
@@ -296,12 +304,12 @@
             &__box {
                 max-width: 870px;
                 width: 100%;
-                padding: 95px 0;
-                overflow: visible;
+                padding: 95px 15px;
                 background-color: #feefe2;
                 &-info {
                     max-width: 270px;
-                    margin-left: 400px;
+                    margin-left: auto;
+                    margin-right: 15px;
                     position: relative;
                     color: #243f4d;
                 }
@@ -337,10 +345,13 @@
             &__items {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                grid-gap: 30px;
+                grid-row-gap: 30px;
+                grid-column-gap: 30px;
             }
             &__box {
                 position: relative;
+                justify-self: center;
+                align-self: center;
                 &-title__box {
                     position: absolute;
                     left: 35px;
@@ -375,6 +386,7 @@
         
         // -------------------------------------------------- 
         .articles {
+            margin-bottom: -150px;
             color: #262626;
             &__header {
                 display: flex;
@@ -512,8 +524,7 @@
                 font-size: 12px;
                 color: #234969;
                 border: none;
-                max-width: 170px;
-                width: 100%;
+                width: 170px;
                  ::placeholder {
                     color: #234969;
                 }

@@ -1,4 +1,14 @@
  $(function() {
+     // _____________________________________________________________________________________
+     $('.burger-menu__box').on('click', function() {
+         $('.header__menu').toggleClass('header__menu--active');
+     })
+
+
+
+
+     // _____________________________________________________________________________________
+
      $('.price-filter__input').ionRangeSlider({
          onStart: function(data) {
              $('.price-filter__from').text(data.from)
@@ -12,6 +22,23 @@
      });
 
      // _____________________________________________________________________________________
+
+     $('.products-tabs__link').on('click', function(e) {
+         e.preventDefault();
+         $('.products-tabs__link').removeClass('products-tabs__link--active');
+         $(this).addClass('products-tabs__link--active');
+
+
+         $('.products-tabs__content-item').removeClass('products-tabs__content-item--active');
+         $($(this).attr('href')).addClass('products-tabs__content-item--active');
+
+     });
+
+
+
+
+     // _____________________________________________________________________________________
+
 
 
      $(".rating").rateYo({
@@ -42,6 +69,21 @@
      $('.product-info__input-num').styler();
 
      // _____________________________________________________________________________________
+
+     $('.products-related__inner').slick({
+         arrows: true,
+         slidesToShow: 4,
+         infinite: false,
+
+     });
+
+
+
+
+
+     // _____________________________________________________________________________________
+
+
 
 
      $('.slider__inner').slick({
