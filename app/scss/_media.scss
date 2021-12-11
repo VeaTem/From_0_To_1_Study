@@ -33,9 +33,44 @@
                  margin: 0 15px 25px;
              }
          }
+         .aboutus__img {
+             object-fit: contain;
+         }
+         .aboutus__line-info {
+             flex-direction: column;
+         }
+         .aboutus__line-info__box {
+             margin-left: 0;
+             text-align: center;
+             margin-bottom: 35px;
+             &:first-child::before {
+                 display: block;
+             }
+         }
+         .team {
+             padding-top: 50px;
+             &__inner {
+                 flex-direction: column;
+             }
+             &__info {
+                 max-width: 100%;
+                 margin-bottom: 45px;
+             }
+         }
      }
      
      @media (max-width: 1000px) {
+         .aboutus__inner {
+             flex-direction: column;
+         }
+         .aboutus__img {
+             height: 600px;
+             width: 800px;
+             order: 1;
+         }
+         .aboutus__line-info {
+             flex-direction: row;
+         }
          .burger-menu__box {
              order: 1;
              width: 50px;
@@ -154,11 +189,38 @@
              font-size: 60px;
              line-height: 90px;
          }
+         .aboutus__inner {
+             margin-bottom: 50px;
+         }
+         .numbers {
+             margin-bottom: 50px;
+             &__inner {
+                 display: grid;
+                 grid-template-columns: repeat(2, 1fr);
+             }
+             &__box {
+                 margin-bottom: 25px;
+             }
+         }
+         .team__guys-img {
+             width: 100%;
+         }
      }
      
      @media (max-width: 700px) {
          .footer__box+.footer__box {
              margin-left: 50px;
+         }
+         .team {
+             &__guys {
+                 grid-template-columns: repeat(1, 1fr);
+                 grid-row-gap: 60px;
+                 &-box__contact {
+                     width: 290px;
+                     padding: 10px [0px;
+                     bottom: -55px;
+                 }
+             }
          }
      }
      
@@ -216,6 +278,9 @@
                  }
              }
          }
+         .aboutus__line-info {
+             flex-direction: column;
+         }
      }
      
      @media (max-width: 565px) {
@@ -247,6 +312,14 @@
          .error__text {
              font-size: 35px;
              line-height: 40px;
+         }
+         .aboutus__years-num {
+             font-size: 110px;
+         }
+         .numbers {
+             &__inner {
+                 grid-template-columns: repeat(1, 1fr);
+             }
          }
      }
      
