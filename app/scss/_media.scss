@@ -57,6 +57,24 @@
                  margin-bottom: 45px;
              }
          }
+         .blog-content {
+             width: 100%;
+             &__img {
+                 width: 100%;
+                 height: 500px;
+             }
+         }
+         .blog-aside__filter,
+         .blog-aside__posts {
+             display: none;
+         }
+         .blog__inner {
+             flex-direction: column;
+         }
+         .blog-aside {
+             order: -1;
+             width: 100%;
+         }
      }
      
      @media (max-width: 1000px) {
@@ -205,6 +223,23 @@
          .team__guys-img {
              width: 100%;
          }
+         .blockquote {
+             line-height: 22px;
+         }
+         .comments-item:nth-child(2n) {
+             max-width: 100%;
+             margin-left: 0;
+         }
+         .comments-form__input+.comments-form__input {
+             margin-left: 0;
+         }
+         .comments-form__inner {
+             text-align: center;
+         }
+         .comments-form__input {
+             margin-bottom: 15px !important;
+             max-width: 100%;
+         }
      }
      
      @media (max-width: 700px) {
@@ -217,9 +252,22 @@
                  grid-row-gap: 60px;
                  &-box__contact {
                      width: 290px;
-                     padding: 10px [0px;
+                     padding: 10px 0px;
                      bottom: -55px;
                  }
+             }
+         }
+         .another {
+             flex-direction: column;
+             &-img {
+                 height: 300px;
+                 object-fit: cover;
+                 margin-top: 30px;
+                 order: 1;
+             }
+             &-info {
+                 margin-left: 0;
+                 ;
              }
          }
      }
@@ -281,6 +329,17 @@
          .aboutus__line-info {
              flex-direction: column;
          }
+         .blockquote {
+             padding: 10px 15px 0 15px;
+             font-size: 14px;
+             height: 150px;
+         }
+         .blog-content__img {
+             height: 300px;
+         }
+         .blog-content__title {
+             font-size: 26px;
+         }
      }
      
      @media (max-width: 565px) {
@@ -320,6 +379,24 @@
              &__inner {
                  grid-template-columns: repeat(1, 1fr);
              }
+         }
+         .comments-item {
+             flex-direction: column;
+         }
+         .comments-avatar {
+             margin-bottom: 15px;
+         }
+         .comments-text__box {
+             margin-left: 0;
+         }
+         .comments-text {
+             font-size: 14px;
+         }
+         .author {
+             flex-direction: column;
+         }
+         .author-info {
+             margin-bottom: 15px;
          }
      }
      
