@@ -3,6 +3,9 @@
      $('.burger-menu__box').on('click', function() {
          $('.header__menu').toggleClass('header__menu--active');
      })
+     $('.filter-button ').on('click', function() {
+         $('.product__category').toggleClass('product__category--filter');
+     })
 
 
 
@@ -74,6 +77,25 @@
          arrows: true,
          slidesToShow: 4,
          infinite: false,
+         responsive: [{
+                 breackpoint: 1230,
+                 settings: {
+                     slidesToShow: 3,
+                 }
+             },
+             {
+                 breackpoint: 1000,
+                 settings: {
+                     slidesToShow: 2,
+                 }
+             },
+             {
+                 breackpoint: 700,
+                 settings: {
+                     slidesToShow: 1,
+                 }
+             },
+         ],
 
      });
 
