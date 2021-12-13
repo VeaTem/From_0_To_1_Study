@@ -78,19 +78,19 @@
          slidesToShow: 4,
          infinite: false,
          responsive: [{
-                 breackpoint: 1230,
+                 breakpoint: 1230,
                  settings: {
                      slidesToShow: 3,
                  }
              },
              {
-                 breackpoint: 1000,
+                 breakpoint: 1000,
                  settings: {
                      slidesToShow: 2,
                  }
              },
              {
-                 breackpoint: 700,
+                 breakpoint: 700,
                  settings: {
                      slidesToShow: 1,
                  }
@@ -120,7 +120,18 @@
          slidesToShow: 3,
          slidesToScroll: 1,
          vertical: true,
-         focusOnSelect: true
+         focusOnSelect: true,
+         responsive: [{
+                 breakpoint: 700,
+                 settings: {
+                     vertical: false,
+                     slidesToShow: 3,
+                     arrows: true,
+                     adaptiveHeight: true,
+                 }
+             },
+
+         ],
      });
      $('.product-slider__big').slick({
          asNavFor: '.product-slider__mini',
